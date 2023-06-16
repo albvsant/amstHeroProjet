@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+        <LinearLayout
+            android:layout_width="395dp"
+            android:layout_height="340dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp"
+            tools:ignore="MissingConstraints">
+        <TextView
+            android:id="@+id/txttitulo"
+            android:layout_width="match_parent"
+            android:layout_height="179dp"
+            android:gravity="center"
+            android:text="Aplicaciones Moviles y Sistemas Telematicos"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintBottom_toTopOf="@+id/txtsubtitulo"
+            tools:layout_editor_absoluteX="29dp" />
+
+        <TextView
+            android:id="@+id/txtsubtitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Examen Practico"
+            tools:layout_editor_absoluteX="167dp"
+            tools:layout_editor_absoluteY="146dp"/>
+
+        <TextView
+            android:id="@+id/txtnombres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jasser Jimenez y Josue Valencia"
+            tools:layout_editor_absoluteX="119dp"
+            tools:layout_editor_absoluteY="195dp" />
+
+        <EditText
+            android:id="@+id/editTextHeroName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Busqueda por nombre"
+            android:inputType="text"
+            tools:layout_editor_absoluteX="29dp"
+            tools:layout_editor_absoluteY="240dp" />
+
+        <Button
+            android:id="@+id/buttonSearch"
+            android:layout_width="212dp"
+            android:layout_height="38dp"
+            android:layout_gravity="center"
+            android:onClick="irMenuPrincipal"
+            android:text="Buscar Heroes"
+            app:backgroundTint="#320DDA" />
+        </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
